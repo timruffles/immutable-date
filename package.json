@@ -1,0 +1,20 @@
+{
+  "name": "immutable-date",
+  "version": "1.0.0",
+  "description": "JS Date API, with all setX methods returning a new instance rather than mutating the original date",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "date",
+    "immutable",
+    "time"
+  ],
+  "author": "Tim Ruffles <timruffles@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  }
+}
