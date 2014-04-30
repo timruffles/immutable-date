@@ -1,6 +1,6 @@
 {
   "name": "immutable-date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JS Date API, with all setX methods returning a new instance rather than mutating the original date",
   "main": "index.js",
   "scripts": {

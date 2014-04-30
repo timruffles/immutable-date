@@ -1,9 +1,27 @@
 function ImmutableDate(year, month, day, hour, minute, second, millisecond) {
-  if(arguments.length === 0) {
+  switch(arguments.length) {
+  case 0:
     this._date = new Date;
-  } else if (arguments.length === 1) {
+    break;
+  case 1:
     this._date = new Date(year);
-  } else {
+    break;
+  case 2:
+    this._date = new Date(year, month);
+    break;
+  case 3:
+    this._date = new Date(year, month, day);
+    break;
+  case 4:
+    this._date = new Date(year, month, day, hour);
+    break;
+  case 5:
+    this._date = new Date(year, month, day, hour, minute);
+    break;
+  case 6:
+    this._date = new Date(year, month, day, hour, minute, second);
+    break;
+  case 7:
     this._date = new Date(year, month, day, hour, minute, second, millisecond);
   }
 }
