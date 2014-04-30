@@ -9,7 +9,9 @@ function ImmutableDate(year, month, day, hour, minute, second, millisecond) {
 }
 
 Object.getOwnPropertyNames(Date.prototype).forEach(function(p) {
-  if(!/^set/.test(p)) {
+  if(p == "constructor") {
+    return;
+  } else if(!/^set/.test(p)) {
     ImmutableDate.prototype[p] = function getter() {
        return this._date[p].apply(this._date,arguments);
     }
